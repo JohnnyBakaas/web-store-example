@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--prime-dark);
+  color: var(--prime-light);
+
+  .left-wrapper {
+    flex: 1;
+    height: 100%;
+
+    .left {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      padding: 24px;
+
+      .title {
+        font-size: 4em;
+      }
+
+      .text {
+        font-size: 2em;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    position: relative;
+
+    view-timeline-name: --right;
+    view-timeline-axis: block;
+
+    top: 0;
+    height: 100vh;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: var(--prime-dark-03);
+      pointer-events: none;
+
+      animation: overlayFade linear both;
+      animation-timeline: --right;
+      animation-range: entry 50% to exit 0%;
+    }
+
+    .img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+
+      filter: grayscale(0%);
+
+      animation: colorize linear both;
+      animation-timeline: --right;
+      animation-range: entry 50% to exit 0%;
+    }
+  }
+}
+
+/* Animations */
+@keyframes colorize {
+  to {
+    filter: grayscale(100%);
+  }
+}
+
+@keyframes overlayFade {
+  to {
+    background-color: var(--prime-dark-85);
+  }
+}

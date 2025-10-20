@@ -1,0 +1,29 @@
+:root {
+  --prime: rgba(91, 0, 91);
+  --prime-85: rgba(91, 0, 91, 0.85);
+  --prime-65: rgba(91, 0, 91, 0.65);
+  --prime-45: rgba(91, 0, 91, 0.45);
+  --prime-25: rgba(91, 0, 91, 0.25);
+  --prime-15: rgba(91, 0, 91, 0.15);
+  --prime-10: rgba(91, 0, 91, 0.1);
+  --prime-05: rgba(91, 0, 91, 0.05);
+  --prime-03: rgba(91, 0, 91, 0.03);
+
+  --prime-light: rgba(255, 211, 255);
+  --prime-light-85: rgba(255, 211, 255, 0.85);
+  --prime-light-65: rgba(255, 211, 255, 0.65);
+  --prime-light-45: rgba(255, 211, 255, 0.45);
+  --prime-light-25: rgba(255, 211, 255, 0.25);
+  --prime-light-15: rgba(255, 211, 255, 0.15);
+  --prime-light-05: rgba(255, 211, 255, 0.05);
+  --prime-light-03: rgba(255, 211, 255, 0.03);
+
+  --prime-dark: rgba(34, 0, 34);
+  --prime-dark-85: rgba(34, 0, 34, 0.85);
+  --prime-dark-65: rgba(34, 0, 34, 0.65);
+  --prime-dark-45: rgba(34, 0, 34, 0.45);
+  --prime-dark-25: rgba(34, 0, 34, 0.25);
+  --prime-dark-15: rgba(34, 0, 34, 0.15);
+  --prime-dark-05: rgba(34, 0, 34, 0.05);
+  --prime-dark-03: rgba(34, 0, 34, 0.03);
+}

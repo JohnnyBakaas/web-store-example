@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+
+  .cards-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    position: relative;
+
+    & > * {
+      scroll-snap-align: start; /* snap each child’s start edge */
+    }
+  }
+
+  .direction-buttons {
+    --size: 128px;
+    --offset-side: 16px;
+
+    width: var(--size);
+    background-color: var(--prime-10);
+    border: none;
+    outline: none;
+    color: var(--prime-dark);
+
+    transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--prime-15);
+    }
+
+    &:focus {
+      background-color: var(--prime-05);
+    }
+
+    &:disabled {
+      opacity: 0;
+      cursor: unset;
+    }
+
+    &.left {
+    }
+    &.right {
+    }
+  }
+}
